@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HupHeng MOS</string>
+    <string name="order_state_pennding">等待收单</string>
+    <string name="order_state_reveive">等待发货</string>
+    <string name="order_state_shiped">等待收货</string>
+    <string name="order_state_deliver">已收货</string>
+    <string name="order_state_cancel">已取消</string>
+    <string name="order_state_pedding_short">待收单</string>
+    <string name="order_state_confirmed_short">待发货</string>
+   
+    <string name="order_state_pennding_action">收到订单</string>
+    <string name="order_state_reveive_action">发货</string>
+    <string name="order_state_shiped_action">收到货物</string>
+    
+    <string-array name="spinner_calendar_mode">
+        <item>单选</item>
+        <item>范围选择</item>
+    </string-array>
+
+    <string-array name="spinner_type_ongoing_array">
+        <item>全部类型</item>
+        <item>已发送，等待收单</item>
+        <item>已收单，等待发货</item>
+        <item>已发货，等待收货</item>
+    </string-array>
+
+    <string-array name="spinner_type_history_array">
+        <item>全部类型</item>
+        <item>已收货</item>
+        <item>已取消</item>
+    </string-array>
+    
+    <string-array name="spinner_sort_array">
+        <item>按下单时间</item>
+        <item>按送货时间</item>
+    </string-array>
+    
+    <string name="menu_show_store_all">显示所有货物</string>
+    <string name="menu_show_store_storage_only">仅显示存货</string>
+    <string name="menu_show_store_limited_only">仅显示限额货物</string>
+    
+    <string name="notify_title_order_new">新订单: %1$s</string>
+    <string name="notify_title_order_amend">订单修改: %1$s</string>
+    <string name="notify_title_order_confirmed">订单已确认: %1$s</string>
+    <string name="notify_title_order_delivered">订单已发货: %1$s</string>
+    <string name="notify_title_order_received">订单已送达: %1$s</string>
+    <string name="notify_title_order_canceled">订单取消: %1$s</string>
+
+    <string name="dialog_continue">继续</string>
+    <string name="dialog_finished">完成</string>
+    <string name="dialog_edit_order_field">操作失败</string>
+    
+    <string name="template_activity_title">订单模板创建</string>
+    <string name="template_activity_template_name_prefix">模板名</string>
+    <string name="template_name_hint">模板 %1$s</string>
+    
+    <string name="dialog_new_order_title">新订单创建</string>
+    <string name="dialog_new_order_first_item">空白订单</string>
+    
+    <string name="text_prefix_login_account">登陆帐户：</string>
+    <string name="text_prefix_wait_for_receive">新订单：</string>
+    <string name="text_prefix_wait_for_ship">等待发货：</string>
+    <string name="text_prefix_order_human_id">订单编号：</string>
+    <string name="text_title_template">订单模版</string>
+    <string name="text_main_list_filter">筛选</string>
+    <string name="text_main_type_filter_prefix">订单类型：</string>
+    <string name="text_main_date_filter_prefix">送货时间：</string>
+    <string name="text_main_sort_filter_prefix">排序规则：</string>
+    <string name="text_main_date_filter_all">全部时间</string>
+    <string name="text_description_prefix">附加信息：</string>
+    <string name="text_operate_description_prefix">描述： %1$s</string>
+    <string name="text_description_none">无</string>
+    <string name="text_history_order">历史订单</string>
+    <string name="text_store_manage">仓库管理</string>
+    <string name="text_add_template">添加订单模板</string>
+    <string name="text_cancel_order">取消订单</string>
+    <string name="text_customer_order_manage">订单管理</string>
+    <string name="text_vegetable">蔬菜</string>
+    <string name="text_fruit">水果</string>
+    <string name="text_template_prefix">模版： </string>
+    <string name="text_delete_template">删除模版</string>
+    <string name="text_login_user">登陆帐户：%1$s</string>
+    <string name="text_wait_for_receive">等待收单：%1$s</string>
+    <string name="text_wait_for_ship">等待发货：%1$s</string>
+    <string name="text_order_in_number">订单：%1$s</string>
+    <string name="text_cuntomer_list">客户列表</string>
+    <string name="text_wait_for_reveive_simple">待收单</string>
+    <string name="text_wait_for_ship_simple">待发货</string>
+    <string name="text_order_state_prefix">订单状态：%1$s</string>
+    <string name="text_confirm">确认</string>
+    <string name="text_preview">预览</string>
+    <string name="text_prefix_operator">操作人：%1$s</string>
+    <string name="text_prefix_supplier_storage_amount">当前限量：%1$s</string>
+    <string name="text_prefix_customer_storage_amount">库存量：%1$s</string>
+    <string name="text_prefix_order_change">%1$s 个订单改动</string>
+    <string name="text_prefix_order_change_new">%1$s 个新订单</string>
+    <string name="text_prefix_order_change_statechange">%1$s 个订单状态变动</string>
+    <string name="text_prefix_order_change_edit">%1$s 个订单修改</string>
+    <string name="text_date_select_mode">时间模式：</string>
+    <string name="text_customer_select">客户选择：</string>
+    <string name="text_select_all">全选</string>
+    <string name="text_select_customer_hit">点击选择客户</string>
+    <string name="text_select_customer_prefix">已选择  %1$s 间客户</string>
+    <string name="text_generate_report">生成报告</string>
+    <string name="text_add">增加</string>
+    <string name="text_minus">减少</string>
+    <string name="text_more_history_order">更多历史订单</string>
+    <string name="text_loading">正在加载..</string>
+    <string name="text_store_reset">取消限量</string>
+    <string name="text_product_none">无</string>
+    <string name="hint_online_search">在线查找</string>
+    <string name="hint_order_human_id">请输入订单编号</string>
+    <string name="text_login_exparted">登陆过期，请重新登陆</string>
+
+    <string name="title_store_activity">%1$s 仓库</string>
+    <string name="title_order_overview_activity">订货总览</string>
+    <string name="title_order_template_create">订单模板创建</string>
+    <string name="title_order_template_edit">订单模板修改</string>
+    <string name="title_history_order">历史订单</string>
+    
+    <string name="description_customer_store">客户仓库</string>
+    <string name="description_order_history">历史订单</string>
+    <string name="description_order_records">订货总览</string>
+    
+    <string name="hint_cancel_order">取消订单原因..</string>
+    
+    <string name="checkbox_only_show_unavailable">仅显示缺货商品</string>
+    <string name="checkbox_only_show_store_item">仅显示存货商品</string>
+    
+    <string name="title_product_manage">共 %1$s 个货物</string>
+    <string name="title_product_manage_subfix"> ( %1$s 个缺货)</string>
+    
+    <string name="dialog_product_availability_title">货品操作</string>
+    <string name="dialog_product_availability_message_change_to_available">修改该货品状态为正常供货？</string>
+	<string name="dialog_product_availability_message_change_to_unavailable">修改该货品状态为暂时缺货？</string>
+	<string name="dialog_date_title">请选择开始及结束时间</string>
+	<string name="dialog_loging_out_text">正在注销...</string>
+	<string name="dialog_server_data_already_change">服务器数据已被修改</string>
+	<string name="dialog_change_data_positive_confirm">继续修改至 %1$s</string>
+	<string name="dialog_confirm_order_cancel_title">取消此订单？</string>
+	<string name="dialog_auto_logout_title">账户已注销</string>
+	<string name="dialog_auto_logout_message">账户已在另一台设备上登陆，您已被迫下线</string>
+	<string name="dialog_template_deleted_title">模板修改失败</string>
+	<string name="dialog_template_deleted_message">该订单模板已被删除</string>
+	<string name="dialog_customer_choice_title">客户选择</string>
+	
+	<string name="dialog_delete_tempalte_title">删除确认</string>
+	<string name="dialog_delete_tempalte_message">确认删除该模版？</string>
+	
+	<string name="toast_not_found">没有找到</string>
+	<string name="toast_tart_time_not_selected">请先选择到货时间</string>
+    <string name="toast_order_state_change_success">订单状态修改成功</string>
+    <string name="toast_order_cancel_success">取消成功</string>
+
+    <string name="toast_order_product_list_is_empty">商品列表为空，请先添加商品</string>
+    <string name="toast_make_new_order_start">正在提交订单...</string>
+    <string name="toast_make_new_order_success">订单提交成功</string>
+    <string name="toast_make_new_order_failed">订单提交失败</string>
+    <string name="toast_amend_order_start">正在提交订单修改...</string>
+    
+    <string name="toast_none_network_connection">没有可用的网络连接，请检查您的网络设置</string>
+    <string name="toast_tempalte_name_is_none">模板名不能为空</string>
+    
+    <string name="toast_common_change_success">修改成功</string>
+    <string name="toast_common_change_failed">修改失败</string>
+    
+    <string name="toast_order_already_changed">操作失败，原订单已发生改变，请重新确认</string>
+    <string name="toast_select_customer_is_none">客户列表为空，请先选择客户</string>
+    
+    <string name="toast_statistic_order_is_empty">所选订单为空</string>
+    <string name="toast_order_report_generate_success">报告生成成功</string>
+    
+    <string name="toast_no_more_hsitory_order">已经加载全部历史订单</string>
+    <string name="toast_statistic_is_empty">统计订货信息为空</string>
+	
+	<string name="detail_activity_customer_title">详情信息</string>
+    
+    <string name="detail_list_item_tart_time">送货时间：</string>
+    <string name="detail_operate_list_item_supplier_prefix">操作人：</string>
+
+    <string name="detail_actionbar_edit_order_text">修改订单</string>
+    <string name="detail_actionbar_copy_order_text">复制订单</string>
+    <string name="detail_actionbar_cancel_order_text">取消订单</string>
+    <string name="detail_pager_order_detail_title">订单详情</string>
+    <string name="detail_pager_operate_title">操作记录</string>
+
+    <string name="detail_text_customer_operate_title">客户操作</string>
+    <string name="detail_text_suplier_operate_title">供货商操作</string>
+    <string name="detail_text_customer_state_title">订单状态</string>
+    <string name="detail_text_customer_product_title">货品列表</string>
+    <string name="detail_text_finish_time_prefix">操作时间：</string>
+    <string name="detail_text_create_time_prefix">下单时间：</string>
+    <string name="detail_text_target_time_prefix">送货时间：</string>
+   	<string name="detail_text_confirm_time_prefix">确认时间：</string>
+   	<string name="detail_text_deliver_time_prefix">发货时间：</string>
+    <string name="detail_text_receive_time_prefix">收货时间：</string>
+    <string name="detail_text_ship_time_prefix">发货时间：</string>
+    <string name="detail_text_cancel_time_prefix">取消世间：</string>
+    <string name="detail_text_state_prefix">订单状态：</string>
+    <string name="detail_text_confirm_none">未确认</string>
+    <string name="detail_text_ship_none">未发货</string>
+    <string name="detail_text_deliver_none">未到货</string>
+    
+    <string name="order_operate_action_customer_new">客户创建</string>
+    <string name="order_operate_action_supplier_new">供货商创建</string>
+    <string name="order_operate_action_customer_amend">客户修改</string>
+    <string name="order_operate_action_supplier_amend">供货商修改</string>
+    <string name="order_operate_action_confirm">供货商确认</string>
+    <string name="order_operate_action_ship">供货商发货</string>
+    <string name="order_operate_action_dliver">客户收货</string>
+    <string name="order_operate_action_customer_cancel">客户取消</string>
+    <string name="order_operate_action_supplier_cancel">供货商取消</string>
+    <string name="order_operate_action_system_amend">系统修改</string>
+    
+    <string name="detail_supplier_btn_text_confirm">确认</string>
+    <string name="detail_supplier_btn_text_dliver">发货</string>
+
+    <string name="detail_text_add_prefix"><font fgcolor="#ff00ff00">添加</font> %1$s</string>
+    <string name="detail_text_delete_prefix"><font fgcolor="#ffff0000">删除</font> %1$s</string>
+    <string name="detail_text_change_prefix"><font fgcolor="#ffffff00">修改</font> %1$s</string>
+    
+    <string name="order_state_change_confirm_dialog_message">更改订单状态至  %1$s?</string>
+    
+    <string name="title_activity_login">移动订单系统</string>
+
+    <!-- Strings related to login -->
+    <string name="login_customer_title"><b>登录</b></string>
+    <string name="login_supplier_title"><b>供货商登录</b></string>
+    <string name="login_username">用户名</string>
+    <string name="login_password">密码</string>
+    <string name="login_text_login"><b>登录</b></string>
+    <string name="login_error_invalid_password">密码过短</string>
+    <string name="login_error_incorrect">用户名或密码不正确</string>
+    <string name="login_error_field_required">用户名或密码不能为空</string>
+    
+    <string name="main_action_new_order">新订单</string>
+    <string name="main_activity_title_all">全部订单</string>
+    <string name="main_drawer_open">打开面板</string>
+    <string name="main_drawer_close">关闭面板</string>
+    <string name="main_drawer_btn_logout">注销</string>
+    <string name="main_drawer_logout_dialog_title">注销</string>
+    <string name="main_drawer_logout_dialog_message">取消登录当前账户?</string>
+    <string name="main_drawer_cuntomer_title">客户列表</string>
+    <string name="main_drawer_order_template_title">订单模板</string>
+    <string name="main_drawer_order_template_list_header">添加订单模板</string>
+    
+        <string name="product_list_item_description_days_prefix">需提前 %1$s 天订货</string>
+    <string name="product_list_item_description_hours_prefix">需提前 %1$s 小时订货</string>
+    
+    <string name="editorder_step_one_date_select_title">请选择送货时间</string>
+    <string name="editorder_step_one_previous_btn">上一步</string>
+    <string name="editorder_step_one_next_btn">下一步</string>
+    <string name="editorder_step_one_fragment_title">送货时间选择</string>
+    <string name="editorder_step_two_fragment_title">货品选择</string>
+    <string name="editorder_step_three_fragment_title">订单预览</string>
+	<string name="editorder_step_three_submit_button">提交订单</string>
+	
+	<string name="editorder_step_two_btn_mode_order_text">下一步</string>
+	<string name="editorder_step_two_btn_mode_template_text">预览</string>
+	
+	<string name="dialog_preview_title">模板预览</string>
+
+    <string name="dialog_edit_order_progress_title">订单发送中</string>
+    <string name="dialog_edit_order_progress_message">请稍后...</string>
+
+    <string name="edit_target_text_hit">点击选择送货时间</string>
+    <string name="edit_title_time">送货时间：  %1$s</string>
+    <string name="edit_fragment_title_select_product">货品选择</string>
+    <string name="edit_fragment_title_new_oder">新订单</string>
+    <string name="edit_fragment_title_supplier_new_oder">%1$s 新订单</string>
+    <string name="edit_fragment_title_edit_oder">订单修改</string>
+    <string name="edit_detail_product_list_title">订货列表</string>
+    <string name="edit_dialog_title_amount_select">请输入需要的货品数量?</string>
+    <string name="edit_dialog_edittext_decimal_hint">请输入数字(eg. 2.5)</string>
+    <string name="edit_dialog_edittext_single_hint">请输入数字(eg. 2)</string>
+    <string name="edit_dialog_amount_subfix_text">Kg</string>
+    <string name="edit_product_amount">%1$s Kg</string>
+    <string name="edit_action_acctep">确认</string>
+    <string name="edit_dialog_title_choose_date">到货时间选择</string>
+    <string name="edit_button_text_add_product">添加货品</string>
+    
+    <string name="send_dialog_title">确认</string>
+    <string name="send_dialog_message">提交订单?</string>
+</resources>

@@ -1,0 +1,17 @@
+:host {
+  padding: 15px;
+}
+
+section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.right-container {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+#left-container {
+  width: 280px;
+}

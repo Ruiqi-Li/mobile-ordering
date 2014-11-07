@@ -1,0 +1,166 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<link rel="import" href="packages/paper_elements/paper_ripple.html">
+<link rel="import" href="packages/paper_elements/paper_fab.html">
+<link rel="import" href="packages/paper_elements/paper_radio_button.html">
+<link rel="import" href="packages/paper_elements/paper_radio_group.html">
+<link rel="import" href="packages/paper_elements/paper_checkbox.html">
+<link rel="import" href="packages/paper_elements/paper_dialog.html">
+<link rel="import" href="packages/paper_elements/paper_dialog_transition.html">
+<link rel="import" href="packages/paper_elements/paper_button.html">
+<link rel="import" href="packages/paper_elements/paper_toast.html">
+<link rel="import" href="packages/core_elements/core_icons.html">
+<link rel="import" href="packages/core_elements/core_field.html">
+<link rel="import" href="packages/core_elements/core_icon.html">
+<link rel="import" href="packages/core_elements/core_menu.html">
+<link rel="import" href="packages/core_elements/core_submenu.html">
+<link rel="import" href="packages/core_elements/core_pages.html">
+
+<polymer-element name="customer-subpage">
+  <template>
+    <link href="customer_subpage.css" rel="stylesheet">
+    <link href="common_widget.css" rel="stylesheet">
+    
+    <div vertical layout center fit>
+    <div horizontal layout center flex>
+      <div class="list-container" style="overflow-y: auto" vertical layout>
+        <core-menu id="group-menu" on-core-select="{{onSelectCustomerGroup}}">
+          <div class="list-item" vertical layout data-group="-1">
+            <div horizontal layout center flex>
+              <paper-fab icon="add" class="mini green"></paper-fab>
+              <div>新建客户组</div>
+            </div>
+            <paper-ripple fit></paper-ripple>
+          </div>
+          <template repeat="{{customerGroup in customerGroups | enumerate}}">
+            <core-submenu label="{{customerGroup.value.name_cn}}" data-group="{{customerGroup.index}}"
+                          on-core-select="{{onSelectCustomer}}">
+              <div class="list-item" vertical layout data-customer="-1">
+                <div horizontal layout center flex>
+                  <paper-fab icon="add" class="mini green"></paper-fab>
+                  <div>新建客户</div>
+                </div>
+                <paper-ripple fit></paper-ripple>
+              </div>
+              <template repeat="{{customer in customerGroup.value.customers | enumerate}}">
+                <core-submenu label="{{customer.value.name_cn}}" data-customer="{{customer.index}}"
+                              on-core-select="{{onSelectUser}}">
+                  <div class="list-item" vertical layout data-user="-1">
+                    <div horizontal layout center flex>
+                      <paper-fab icon="add" class="mini green"></paper-fab>
+                      <div>新建用户</div>
+                    </div>
+                    <paper-ripple fit></paper-ripple>
+                  </div>
+                  <template repeat="{{user in customer.value.users | enumerate}}">
+                    <div class="list-item" vertical layout data-user="{{user.index}}">
+                      <div horizontal layout center flex>
+                        <core-icon icon="account-box"></core-icon>
+                        <div>{{user.value.display_name}}</div>
+                      </div>
+                      <paper-ripple fit></paper-ripple>
+                    </div>
+                  </template>
+                </core-submenu>
+              </template>
+            </core-submenu>
+          </template>
+        </core-menu>
+      </div>
+      
+      <div class="panel-container" vertical layout>
+      <div style="position: relative" vertical layout flex>
+      <core-pages selected="{{panelSelected}}" fit>
+        <div vertical layout fit>
+          <core-field>
+              <core-icon icon="create"></core-icon>
+              <p><strong>客户中文名： </strong></p>
+              <input value="{{customerNameCn}}" placeholder="中文名" flex>
+          </core-field>
+          <core-field>
+              <core-icon icon="create"></core-icon>
+              <p><strong>客户英文名: </strong></p>
+              <input value="{{customerNameEn}}" placeholder="英文名" flex>
+          </core-field>
+          <core-field id="hupheng-id">
+              <core-icon icon="create"></core-icon>
+              <p><strong>客户ID: </strong></p>
+              <input value="{{customerHuphendId}}" flex>
+          </core-field>
+          <div id="director-panel" vertical layout flex>
+            <p>集团经理</p>
+            <core-field>
+                <core-icon icon="create"></core-icon>
+                <p><strong>昵称: </strong></p>
+                <input value="{{directorDispalyName}}" placeholder="昵称" flex>
+            </core-field>
+            <core-field>
+                <core-icon icon="create"></core-icon>
+                <p><strong>登录名: </strong></p>
+                <input value="{{directorLoginName}}" placeholder="登录名" flex>
+            </core-field>
+            <core-field>
+                <core-icon icon="create"></core-icon>
+                <p><strong>登陆密码: </strong></p>
+                <input value="{{directorPassword}}" placeholder="登陆密码" flex>
+            </core-field>
+          </div>
+        </div>
+        <div vertical layout fit>
+          <div flex horizontal layout>
+            <div id="left-container" vertical layout>
+              <section class="small-left-padding">
+                <div>用户基本信息</div>
+              </section>
+              <core-field>
+                  <core-icon icon="create"></core-icon>
+                  <p><strong>昵称: </strong></p>
+                  <input value="{{displayName}}" flex>
+              </core-field>
+              <core-field>
+                  <core-icon icon="create"></core-icon>
+                  <p><strong>登录名: </strong></p>
+                  <input value="{{loginName}}" flex>
+              </core-field>
+              <core-field>
+                  <core-icon icon="create"></core-icon>
+                  <p><strong>登陆密码: </strong></p>
+                  <input value="{{password}}" flex>
+              </core-field>
+            </div>
+            <div class="right-container" flex vertical layout>
+              <section>
+                <div>用户权限设置</div>
+              </section>
+              <paper-checkbox label="创建订单" checked="{{creareOrder}}"></paper-checkbox><br>
+              <paper-checkbox label="编辑订单" checked="{{editOrder}}"></paper-checkbox><br>
+              <paper-checkbox label="取消订单" checked="{{cancelOrder}}"></paper-checkbox><br>
+              <paper-checkbox label="接收订单" checked="{{receiveOrder}}"></paper-checkbox><br>
+              <paper-checkbox label="修改商品库存" checked="{{changeStorage}}"></paper-checkbox><br>
+              <paper-checkbox label="修改订单模板" checked="{{editTemplate}}"></paper-checkbox>
+            </div>
+          </div>
+        </div>
+      </core-pages>
+      </div>
+      <div horizontal around-justified layout>
+        <paper-button id="delete-btn" raisedButton class="red" label="删除"
+                    on-click="{{onDeleteClicked}}" disabled?="{{actioning}}"></paper-button>
+        <paper-button raisedButton class="blue" label="确认"
+                    on-click="{{onSubmitClicked}}" disabled?="{{actioning}}"></paper-button>
+      </div>
+      </div>
+    </div>
+    </div>
+    
+    <paper-dialog id="delete-dialog" heading="删除" transition="paper-dialog-transition-bottom">
+      <p id="dialog-message">message222</p>
+  
+      <paper-button label="取消" affirmative></paper-button>
+      <paper-button label="删除" affirmative autofocus on-click="{{onDeleteConfirm}}"></paper-button>
+  
+    </paper-dialog>
+    
+    <paper-toast id="toast-view"></paper-toast>
+  </template>
+  <script type="application/dart" src="customer_subpage.dart"></script>
+</polymer-element>

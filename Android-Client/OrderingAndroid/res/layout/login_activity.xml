@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sg.com.smartmediasoft.storeclient.ui.login.LoginActivity" >
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:padding="@dimen/login_title_padding"
+        android:textAppearance="@style/Smartmediasoft.Text.Large"
+        android:textColor="@color/smartmediasoft_color" />
+
+    <EditText
+        android:id="@+id/login_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_title"
+        android:layout_marginLeft="@dimen/login_title_padding"
+        android:layout_marginRight="@dimen/login_title_padding"
+        android:hint="@string/login_username"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_username"
+        android:layout_marginLeft="@dimen/login_title_padding"
+        android:layout_marginRight="@dimen/login_title_padding"
+        android:hint="@string/login_password"
+        android:imeActionId="@+id/login"
+        android:imeActionLabel="@string/login_text_login"
+        android:imeOptions="actionUnspecified"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/padding_normal"
+        android:paddingRight="@dimen/padding_normal" >
+
+        <Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/login_text_login"
+            android:textAppearance="@style/Smartmediasoft.Text.Medium"
+            android:textColor="@android:color/white" />
+
+        <ProgressBar
+            android:id="@+id/sign_in_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

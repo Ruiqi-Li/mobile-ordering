@@ -1,0 +1,100 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<link rel="import" href="packages/paper_elements/paper_ripple.html">
+<link rel="import" href="packages/paper_elements/paper_fab.html">
+<link rel="import" href="packages/paper_elements/paper_radio_button.html">
+<link rel="import" href="packages/paper_elements/paper_radio_group.html">
+<link rel="import" href="packages/paper_elements/paper_checkbox.html">
+<link rel="import" href="packages/paper_elements/paper_dialog.html">
+<link rel="import" href="packages/paper_elements/paper_toast.html">
+<link rel="import" href="packages/paper_elements/paper_dialog_transition.html">
+<link rel="import" href="packages/paper_elements/paper_button.html">
+<link rel="import" href="packages/core_elements/core_icons.html">
+<link rel="import" href="packages/core_elements/core_field.html">
+<link rel="import" href="packages/core_elements/core_icon.html">
+
+<polymer-element name="employee-subpage">
+  <template>
+    <link href="employee_subpage.css" rel="stylesheet">
+    <link href="common_widget.css" rel="stylesheet">
+    
+    <div vertical layout center fit>
+    <div horizontal layout center flex>
+      <div class="list-container" vertical layout>
+        <div class="list-item" vertical layout center on-click="{{newEmployeeClicked}}">
+          <div horizontal layout center flex>
+            <paper-fab icon="add" class="mini green"></paper-fab>
+            <div>新建</div>
+          </div>
+          <paper-ripple fit></paper-ripple>
+        </div>
+        <div style="overflow-y: auto; overflow-x: hidden;" vertical layout>
+          <template repeat="{{user in employees | enumerate}}">
+            <div class="list-item" horizontal layout center data-index="{{user.index}}" on-click="{{onListItemClicked}}">
+              <div horizontal layout center>
+                <core-icon icon="account-box"></core-icon>
+                <div>{{user.value.display_name}}</div>
+              </div>
+              <paper-ripple fit></paper-ripple>
+            </div>
+          </template>
+        </div>
+      </div>
+      
+      <div class="panel-container" vertical layout>
+        <div flex horizontal layout>
+          <div id="left-container" vertical layout>
+            <section class="small-left-padding">
+              <div>用户基本信息</div>
+            </section>
+            <core-field>
+                <core-icon icon="create"></core-icon>
+                <p><strong>昵称: </strong></p>
+                <input value="{{displayName}}" flex>
+            </core-field>
+            <core-field>
+                <core-icon icon="create"></core-icon>
+                <p><strong>登录名: </strong></p>
+                <input value="{{loginName}}" flex>
+            </core-field>
+            <core-field>
+                <core-icon icon="create"></core-icon>
+                <p><strong>登陆密码: </strong></p>
+                <input value="{{password}}" flex>
+            </core-field>
+          </div>
+          <div class="right-container" flex vertical layout>
+            <section>
+              <div>用户权限设置</div>
+            </section>
+            <paper-checkbox label="创建订单" checked="{{creareOrder}}"></paper-checkbox><br>
+            <paper-checkbox label="编辑订单" checked="{{editOrder}}"></paper-checkbox><br>
+            <paper-checkbox label="取消订单" checked="{{cancelOrder}}"></paper-checkbox><br>
+            <paper-checkbox label="确认订单" checked="{{confirmOrder}}"></paper-checkbox><br>
+            <paper-checkbox label="订单发货" checked="{{deliverOrder}}"></paper-checkbox><br>
+            <paper-checkbox label="修改商品限额" checked="{{changeStorage}}"></paper-checkbox><br>
+            <paper-checkbox label="查看订单历史记录" checked="{{viewHistory}}"></paper-checkbox><br>
+            <paper-checkbox label="查看订单统计信息" checked="{{viewStatistic}}"></paper-checkbox>
+          </div>
+        </div>
+        <div horizontal around-justified layout>
+          <paper-button id="delete-btn" raisedButton class="red" label="删除"
+                    on-click="{{onDeleteClicked}}" disabled?="{{actioning}}"></paper-button>
+          <paper-button raisedButton class="blue" label="确认"
+                    on-click="{{onSubmitClicked}}" disabled?="{{actioning}}"></paper-button>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    <paper-dialog id="delete-dialog" heading="删除" transition="paper-dialog-transition-bottom">
+      <div id="dialog-message">message222</div>
+  
+      <paper-button label="取消" affirmative></paper-button>
+      <paper-button label="删除" affirmative autofocus on-click="{{onDeleteConfirm}}"></paper-button>
+  
+    </paper-dialog>
+    
+    <paper-toast id="toast-view"></paper-toast>
+  </template>
+  <script type="application/dart" src="employee_subpage.dart"></script>
+</polymer-element>

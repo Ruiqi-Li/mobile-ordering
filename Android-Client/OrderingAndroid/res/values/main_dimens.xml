@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="drawer_layout_width">280dp</dimen>
+    <dimen name="spinner_mini_width">100dp</dimen>
+
+</resources>

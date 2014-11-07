@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sg.com.smartmediasoft.storeclient.ui.orderdetail.OrderDetailOperateListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include layout="@layout/pinned_list_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/smartmediasoft_list_selector_holo_light"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:paddingLeft="@dimen/padding_large"
+        android:paddingRight="@dimen/padding_large" >
+
+        <TextView
+            android:id="@+id/detail_list_item_product_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+
+        <TextView
+            android:id="@+id/detail_list_item_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/detail_list_item_product_value"
+            android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+
+        <TextView
+            android:id="@+id/detail_list_item_description"
+            android:textColor="@android:color/holo_orange_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_list_item_product_name"
+            android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+    </RelativeLayout>
+
+</sg.com.smartmediasoft.storeclient.ui.orderdetail.OrderDetailOperateListItem>

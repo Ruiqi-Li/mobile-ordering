@@ -1,0 +1,14 @@
+name: mobileordering
+description: A sample Polymer application
+author: Ruiqi <ruiqi@smartmediasoft.com.sg>
+dependencies:
+  polymer: any
+  core_elements: any
+  paper_elements: any
+  crypto: any
+  google_backend_v1_api:
+    path: ../dart-lib/dart_backend_v1_api_client
+
+transformers:
+- polymer:
+    entry_points: web/mobileordering.html

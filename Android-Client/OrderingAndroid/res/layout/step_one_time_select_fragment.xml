@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding_normal"
+    android:paddingRight="@dimen/padding_normal" >
+
+    <TextView
+        android:id="@+id/editorder_step_one_target_time_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/widget_button_height"
+        android:singleLine="true"
+        android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/editorder_step_one_date_select_title"
+        android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/smartmediasoft_color" />
+
+    <com.squareup.timessquare.CalendarPickerView
+        android:id="@+id/editorder_step_one_calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:scrollbarStyle="outsideOverlay" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/smartmediasoft_color" />
+
+    <Button
+        android:id="@+id/editorder_step_one_next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_large"
+        android:gravity="center"
+        android:minHeight="@dimen/widget_button_height"
+        android:text="@string/editorder_step_one_next_btn"
+        android:textAppearance="@style/Smartmediasoft.Text.Medium"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

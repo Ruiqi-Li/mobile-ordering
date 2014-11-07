@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智媒移动订单后台</title>
+    <script src="packages/web_components/platform.js"></script>
+    <script src="packages/web_components/dart_support.js"></script>
+
+    <link rel="import" href="elements/main_page.html">
+    
+    <style type="text/css">
+      body, html {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-touch-callout: none;
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+      }
+    </style>
+  </head>
+  <body unresolved>
+  
+    <main-page fit></main-page>
+
+    <script type="application/dart">export 'package:polymer/init.dart';</script>
+  </body>
+</html>

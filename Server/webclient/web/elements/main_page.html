@@ -1,0 +1,79 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<link rel="import" href="packages/core_elements/core_toolbar.html">
+<link rel="import" href="packages/paper_elements/paper_tabs.html">
+<link rel="import" href="packages/paper_elements/paper_ripple.html">
+<link rel="import" href="packages/paper_elements/paper_toast.html">
+<link rel="import" href="packages/paper_elements/paper_button.html">
+<link rel="import" href="packages/paper_elements/paper_shadow.html">
+<link rel="import" href="packages/core_elements/core_animated_pages.html">
+<link rel="import" href="packages/core_elements/core_pages.html">
+<link rel="import" href="packages/core_elements/core_icons.html">
+<link rel="import" href="packages/core_elements/core_field.html">
+<link rel="import" href="packages/core_elements/core_icon.html">
+<link rel="import" href="packages/core_elements/src/core-animated-pages/transitions/cross-fade.html">
+<link rel="import" href="system_subpage.html">
+<link rel="import" href="product_subpage.html">
+<link rel="import" href="employee_subpage.html">
+<link rel="import" href="customer_subpage.html">
+
+<polymer-element name="main-page">
+  <template>
+    <link href="main_page.css" rel="stylesheet">
+    <link href="common_widget.css" rel="stylesheet">
+    
+    <core-animated-pages selected="{{launcherSelect}}" transitions="cross-fade-all" fit>
+      <div horizontal layout center fit style="padding-bottom: 200px">
+          <div vertical layout center flex>
+            <h1>智媒移动订单后台系统</h1>
+            <div vertical layout center style="padding: 30px 60px">
+              <paper-shadow z="1"></paper-shadow>
+              <core-field>
+                  <core-icon icon="account-box"></core-icon>
+                  <input value="{{loginName}}" placeholder="用户名" disabled?="{{logining}}" flex>
+              </core-field>
+              <core-field>
+                  <core-icon icon="https"></core-icon>
+                  <input type="password" value="{{password}}" placeholder="密码" disabled?="{{logining}}" flex>
+              </core-field>
+              <paper-button raisedButton class="blue" label="{{loginBtnText}}"
+                    on-click="{{onLoginClicked}}" disabled?="{{logining}}"></paper-button>
+            </div>
+          </div>
+      </div>
+      <div class="main-content" vertical layout flex>
+        <core-toolbar class="medium-tall">
+          
+          <div horizontal layout center>
+            <img class="icon" src="../static/smartmediasoft.png">
+            <div>智媒移动订单系统控制台</div>
+          </div>
+      
+          <div class="bottom fit" horizontal center-justified layout>
+      
+            <paper-tabs id="main-title-tab" selected="{{tabSelected}}" flex>
+              <paper-tab>客户</paper-tab>
+              <paper-tab>雇员</paper-tab>
+              <paper-tab>商品</paper-tab>
+              <paper-tab>系统设置</paper-tab>
+            </paper-tabs>
+        
+          </div>
+    
+        </core-toolbar>
+        
+        <div vertical layout flex style="position: relative">
+          <core-pages selected="{{tabSelected}}" fit>
+            <customer-subpage fit></customer-subpage>
+            <employee-subpage fit></employee-subpage>
+            <product-subpage fit></product-subpage>
+            <system-subpage fit></system-subpage>
+          </core-pages>
+        </div>
+      </div>
+    </core-animated-pages>
+    
+    <paper-toast id="bottom-toast"></paper-toast>                   
+  </template>
+  <script type="application/dart" src="main_page.dart"></script>
+</polymer-element>
+

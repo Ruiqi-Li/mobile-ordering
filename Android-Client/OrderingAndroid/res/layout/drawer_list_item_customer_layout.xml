@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/smartmediasoft_list_selector_holo_light"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/drawer_list_item_height"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_normal"
+        android:paddingRight="@dimen/padding_normal"
+        android:weightSum="5" >
+
+        <TextView
+            android:id="@+id/main_drawer_list_item_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+
+        <TextView
+            android:id="@+id/main_drawer_list_item_unconfirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+
+        <TextView
+            android:id="@+id/main_drawer_list_item_undliver"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+    </LinearLayout>
+
+    <include layout="@layout/pinned_list_footer" />
+
+</LinearLayout>

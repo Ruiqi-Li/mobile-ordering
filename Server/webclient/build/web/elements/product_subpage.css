@@ -1,0 +1,41 @@
+:host {
+  padding: 15px;
+}
+
+.list-image {
+  width: 70px;
+  height: 41px;
+  margin-right: 10px;
+}
+
+paper-input {
+  color: #00bcd4;
+  margin-right: 20px;
+}
+
+.detail-container {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.drap_image_container {
+  display: inline-block;
+  position: relative;
+}
+
+.drap_image_container > div {
+  color: gray;
+}
+
+#drop-zone {
+  width: 280px;
+  height: 280px;
+  border-style: dashed;
+  border-width: 2px;
+  border-color: #C0C0C0;
+}
+
+#product-img {
+  max-width: 280px;
+  max-height: 280px;
+}

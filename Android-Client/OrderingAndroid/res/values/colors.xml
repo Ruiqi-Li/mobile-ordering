@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Format Color -->
+    <color name="format_color_dkgray">#FF808080</color>
+    <color name="format_color_lite_gray">#FFE0E0E0</color>
+    <color name="format_color_gray">#FFEEEEEE</color>
+    <color name="highlight_yellow">#FFFF99</color>
+
+</resources>

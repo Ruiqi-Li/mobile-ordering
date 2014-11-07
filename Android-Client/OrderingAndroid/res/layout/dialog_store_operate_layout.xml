@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_large" >
+
+    <TextView
+        android:id="@+id/dialog_store_pretext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+
+    <EditText
+        android:id="@+id/dialog_store_edit"
+        android:layout_width="@dimen/store_edittext_width"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+
+    <TextView
+        android:id="@+id/dialog_store_edit_unitname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+
+</LinearLayout>

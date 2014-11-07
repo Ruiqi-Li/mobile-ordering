@@ -1,0 +1,58 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<link rel="import" href="packages/core_elements/core_icons.html">
+<link rel="import" href="packages/core_elements/core_field.html">
+<link rel="import" href="packages/core_elements/core_icon.html">
+<link rel="import" href="packages/core_elements/core_input.html">
+<link rel="import" href="packages/paper_elements/paper_toast.html">
+<link rel="import" href="packages/paper_elements/paper_button.html">
+
+<polymer-element name="system-subpage">
+  <template>
+    <link href="system_subpage.css" rel="stylesheet">
+    <link href="common_widget.css" rel="stylesheet">
+    
+    <div vertical layout center fit>
+    <div horizontal layout center flex>
+      <div class="panel-container" vertical layout>
+            <core-field flex>
+              <core-icon icon="create"></core-icon>
+              <p><strong>报表接收邮箱:</strong></p>
+              <core-input type="email" value="{{email}}" invalid="{{emailInvalid}}" flex></core-input>
+            </core-field>
+            <core-field flex>
+              <core-icon icon="create"></core-icon>
+              <p><strong>用户可提前下单天数:</strong></p>
+              <core-input type="number" min="1" max="100" value="{{orderAdvenceDay}}"
+                    placeholder="1 ~ 100" invalid="{{orderDayInvalid}}" flex></core-input>
+            </core-field>
+            <core-field flex>
+              <core-icon icon="create"></core-icon>
+              <p><strong>每日下单截止时间:</strong></p>
+              <core-input value="{{makeQuota}}" type="number" min="0" max="23"
+                    placeholder="0 ~ 23 (24小时制)" invalid="{{makeQuotaInvalid}}" flex></core-input>
+            </core-field>
+            <core-field flex>
+              <core-icon icon="create"></core-icon>
+              <p><strong>订单修改终止时间:</strong></p>
+              <core-input value="{{editQuota}}" type="number" min="0" max="23"
+                    placeholder="0 ~ 23 (24小时制)" invalid="{{editQuotaInvalid}}" flex></core-input>
+            </core-field>
+            <core-field flex>
+              <core-icon icon="create"></core-icon>
+              <p><strong>订单取消终止时间:</strong></p>
+              <core-input value="{{cancelQuota}}" type="number" min="0" max="23"
+                    placeholder="0 ~ 23 (24小时制)" invalid="{{cancelQuotaInvalid}}" flex></core-input>
+            </core-field>
+            <div flex></div>
+            <div horizontal around-justified layout>
+              <paper-button raisedButton class="blue" label="确认"
+                    on-click="{{onSubmitClicked}}" disabled?="{{actioning}}"></paper-button>
+            </div>
+      </div>
+    </div>
+    </div>
+    
+    <paper-toast id="toast-view"></paper-toast>
+  </template>
+  <script type="application/dart" src="system_subpage.dart"></script>
+</polymer-element>

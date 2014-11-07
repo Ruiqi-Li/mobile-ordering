@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_order_records"
+        android:icon="@drawable/ic_action_go_to_today"
+        android:showAsAction="always"
+        android:title="@string/description_order_records"/>
+
+</menu>

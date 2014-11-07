@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_edit_order"
+        android:icon="@drawable/ic_action_edit"
+        android:showAsAction="always"
+        android:title="@string/detail_actionbar_edit_order_text"/>
+    <item
+        android:id="@+id/action_copy_order"
+        android:icon="@drawable/ic_action_copy"
+        android:showAsAction="ifRoom"
+        android:title="@string/detail_actionbar_copy_order_text"/>
+    <item
+        android:id="@+id/action_cancel_order"
+        android:icon="@drawable/ic_action_cancel"
+        android:showAsAction="ifRoom"
+        android:title="@string/detail_actionbar_cancel_order_text"/>
+
+</menu>

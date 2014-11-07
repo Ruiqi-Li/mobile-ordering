@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/editorder_step_three_target_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/padding_normal"
+        android:paddingRight="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_normal"
+        android:singleLine="true"
+        android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_normal"
+        android:paddingRight="@dimen/padding_normal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/text_description_prefix"
+            android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+
+        <EditText
+            android:id="@+id/editorder_step_three_order_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_normal"
+        android:text="@string/edit_detail_product_list_title"
+        android:textAppearance="@style/Smartmediasoft.Text.Small" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="@dimen/padding_normal"
+        android:layout_marginRight="@dimen/padding_normal"
+        android:background="@color/smartmediasoft_color" />
+
+    <ListView
+        android:id="@+id/editorder_step_three_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/select_product_fragment_bottom_left_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:minHeight="@dimen/widget_button_height"
+            android:text="@string/editorder_step_one_previous_btn"
+            android:textAppearance="@style/Smartmediasoft.Text.Medium"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/select_product_fragment_bottom_right_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:minHeight="@dimen/widget_button_height"
+            android:text="@string/editorder_step_three_submit_button"
+            android:textAppearance="@style/Smartmediasoft.Text.Medium"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+application: ruiqi-test
+version: 1
+runtime: python27
+threadsafe: true
+api_version: 1
+
+handlers:
+
+- url: /worker/.*
+  script: queue_worker.APP
+
+- url: /packages
+  static_dir: web/packages
+- url: /elements
+  static_dir: web/elements
+- url: /static
+  static_dir: web/static
+
+- url: /favicon.ico
+  static_files: web/favicon.ico
+  upload: web/favicon\.ico
+- url: /mobileordering.html.0.dart
+  static_files: web/mobileordering.html.0.dart
+  upload: web/mobileordering\.html\.0\.dart
+- url: /mobileordering.html._data
+  static_files: web/mobileordering.html._data
+  upload: web/mobileordering\.html\._data
+- url: /mobileordering.html_bootstrap.dart
+  static_files: web/mobileordering.html_bootstrap.dart
+  upload: web/mobileordering\.html_bootstrap\.dart
+- url: /mobileordering.html_bootstrap.dart.js
+  static_files: web/mobileordering.html_bootstrap.dart.js
+  upload: web/mobileordering\.html_bootstrap\.dart\.js
+- url: /mobileordering.html_bootstrap.dart.js.map
+  static_files: web/mobileordering.html_bootstrap.dart.js.map
+  upload: web/mobileordering\.html_bootstrap\.dart\.js\.map
+- url: /mobileordering.html_bootstrap.dart.precompiled.js
+  static_files: web/mobileordering.html_bootstrap.dart.precompiled.js
+  upload: web/mobileordering\.html_bootstrap\.dart\.precompiled\.js
+
+- url: /
+  static_files: web/mobileordering.html
+  upload: web/mobileordering\.html
+
+- url: /_ah/spi/.*
+  script: application_api.APPLICATION
+
+libraries:
+
+# You must include the Endpoints library if you wish to serve an API.
+- name: endpoints
+  version: 1.0
+
+# The pycrypto library is used for OAuth 2, and is also a requirement for
+# APIs that wish to authenticate users.
+- name: pycrypto
+  version: latest
+
+- name: ssl
+  version: latest

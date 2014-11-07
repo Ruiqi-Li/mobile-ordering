@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/smartmediasoft_list_selector_holo_light"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:paddingBottom="@dimen/order_product_item_image_top_padding"
+    android:paddingLeft="@dimen/padding_normal"
+    android:paddingRight="@dimen/padding_normal"
+    android:paddingTop="@dimen/order_product_item_image_top_padding" >
+
+    <ImageView
+        android:id="@+id/order_product_image"
+        android:layout_width="@dimen/product_image_width"
+        android:layout_height="@dimen/product_image_height"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="@dimen/padding_normal"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/order_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/padding_normal"
+        android:layout_toRightOf="@id/order_product_image"
+        android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+
+    <TextView
+        android:id="@+id/order_product_kilogram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="@style/Smartmediasoft.Text.Medium"
+        android:textColor="@color/smartmediasoft_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/order_product_image"
+        android:layout_marginLeft="@dimen/padding_normal"
+        android:layout_marginRight="@dimen/padding_normal"
+        android:background="@color/format_color_lite_gray" />
+
+</RelativeLayout>

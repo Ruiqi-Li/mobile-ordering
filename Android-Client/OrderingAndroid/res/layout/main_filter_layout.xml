@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sg.com.smartmediasoft.storeclient.ui.FilterLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/padding_normal"
+    android:paddingRight="@dimen/padding_normal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/filter_layout_height"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="horizontal" >
+
+            <SearchView
+                android:id="@+id/main_list_filters_searchview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:queryHint="@string/hint_order_human_id" >
+            </SearchView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_list_filters_trigger"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/main_list_filters_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/padding_small"
+                android:src="@drawable/ic_action_expand" />
+
+            <TextView
+                android:id="@+id/main_list_filters_indicator_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_main_list_filter"
+                android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_list_main_filter_pannel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/main_prefix_text_width"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:text="@string/text_main_type_filter_prefix"
+                android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+
+            <Spinner
+                android:id="@+id/main_list_type_spinner"
+                android:layout_width="@dimen/main_filter_spinner_width"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/main_prefix_text_width"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:text="@string/text_main_sort_filter_prefix"
+                android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+
+            <Spinner
+                android:id="@+id/main_list_sort_spinner"
+                android:layout_width="@dimen/main_filter_spinner_width"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/main_prefix_text_width"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+
+            <TextView
+                android:id="@+id/main_list_date_spinner"
+                style="?android:attr/spinnerStyle"
+                android:layout_width="@dimen/main_filter_spinner_width"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+        </LinearLayout>
+    </LinearLayout>
+
+</sg.com.smartmediasoft.storeclient.ui.FilterLayout>

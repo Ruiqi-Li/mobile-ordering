@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sg.com.smartmediasoft.storeclient.ui.store.StoreListItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include layout="@layout/pinned_list_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/order_product_item_image_top_padding"
+        android:paddingLeft="@dimen/padding_normal"
+        android:paddingRight="@dimen/padding_normal"
+        android:paddingTop="@dimen/order_product_item_image_top_padding" >
+
+        <ImageView
+            android:id="@+id/store_product_image"
+            android:layout_width="@dimen/store_product_image_width"
+            android:layout_height="@dimen/store_product_image_height"
+            android:layout_marginRight="@dimen/padding_normal"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/store_content_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/store_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+
+            <TextView
+                android:id="@+id/store_product_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Smartmediasoft.Text.Medium"
+                android:textColor="@color/smartmediasoft_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/store_add"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_new_dark" />
+
+            <ImageButton
+                android:id="@+id/store_minus"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_minus_dark" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/pinned_list_footer" />
+
+</sg.com.smartmediasoft.storeclient.ui.store.StoreListItemLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pinned_list_item_footer_line"
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:layout_marginLeft="@dimen/padding_normal"
+    android:layout_marginRight="@dimen/padding_normal"
+    android:background="@color/format_color_lite_gray" />

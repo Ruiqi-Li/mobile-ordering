@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="order_list_item_header_height">28dp</dimen>
+    <dimen name="order_product_item_image_top_padding">4dp</dimen>
+
+</resources>

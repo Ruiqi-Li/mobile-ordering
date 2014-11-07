@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/smartmediasoft_list_selector_holo_light"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/padding_large"
+    android:paddingRight="@dimen/padding_large" >
+
+    <ImageView
+        android:id="@+id/order_product_image"
+        android:layout_width="@dimen/product_image_preview_width"
+        android:layout_height="@dimen/product_image_preview_height"
+        android:layout_marginRight="@dimen/padding_normal"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/order_product_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+
+    <TextView
+        android:id="@+id/order_product_kilogram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Smartmediasoft.Text.Medium"
+        android:textColor="@color/smartmediasoft_color" />
+
+</LinearLayout>

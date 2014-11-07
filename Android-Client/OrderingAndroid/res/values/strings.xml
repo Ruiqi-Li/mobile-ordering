@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HupHeng MOS</string>
+    <string name="order_state_pennding">Pending</string>
+    <string name="order_state_reveive">Confirmed</string>
+    <string name="order_state_shiped">Delivered</string>
+    <string name="order_state_deliver">Received</string>
+    <string name="order_state_cancel">Canceled</string>
+    <string name="order_state_pedding_short">Pending</string>
+    <string name="order_state_confirmed_short">Confirmed</string>
+   
+    <string name="order_state_pennding_action">Confirm</string>
+    <string name="order_state_reveive_action">Deliver</string>
+    <string name="order_state_shiped_action">Receive</string>
+    
+    <string-array name="spinner_calendar_mode">
+        <item>Single</item>
+        <item>Range</item>
+    </string-array>
+
+    <string-array name="spinner_type_ongoing_array">
+        <item>All Status</item>
+        <item>Pending</item>
+        <item>Confirmed</item>
+        <item>Delivered</item>
+    </string-array>
+
+    <string-array name="spinner_type_history_array">
+        <item>All Status</item>
+        <item>Received</item>
+        <item>Canceled</item>
+    </string-array>
+    
+    <string-array name="spinner_sort_array">
+        <item>By create date</item>
+        <item>By target date</item>
+    </string-array>
+    
+    <string name="menu_show_store_all">Show all goods</string>
+    <string name="menu_show_store_storage_only">Show storage only</string>
+    <string name="menu_show_store_limited_only">Show limit goods only</string>
+    
+    <string name="notify_title_order_new">New : %1$s</string>
+    <string name="notify_title_order_amend">Amend : %1$s</string>
+    <string name="notify_title_order_confirmed">Confirmed : %1$s</string>
+    <string name="notify_title_order_delivered">Delivered : %1$s</string>
+    <string name="notify_title_order_received">Received : %1$s</string>
+    <string name="notify_title_order_canceled">Canceled : %1$s</string>
+
+    <string name="dialog_continue">Continue</string>
+    <string name="dialog_finished">Complate</string>
+    <string name="dialog_edit_order_field">Operation Failed</string>
+    
+    <string name="template_activity_title">New order template</string>
+    <string name="template_activity_template_name_prefix">Template name</string>
+    <string name="template_name_hint">Template %1$s</string>
+    
+    <string name="dialog_new_order_title">New order</string>
+    <string name="dialog_new_order_first_item">Empty order</string>
+    
+    <string name="text_prefix_login_account">Login Account : </string>
+    <string name="text_prefix_wait_for_receive">New Order : </string>
+    <string name="text_prefix_wait_for_ship">Wait for Deliver : </string>
+    <string name="text_prefix_order_human_id">Order ID :</string>
+    <string name="text_title_template">Order Template</string>
+    <string name="text_main_list_filter">Filter</string>
+    <string name="detail_text_finish_time_prefix">Operate Time :</string>
+    <string name="text_main_type_filter_prefix">Order Status : </string>
+    <string name="text_main_date_filter_prefix">Target Date : </string>
+    <string name="text_main_sort_filter_prefix">Display Order : </string>
+    <string name="text_main_date_filter_all">All Date</string>
+    <string name="text_description_prefix">Notes : </string>
+    <string name="text_operate_description_prefix">Notes :  %1$s</string>
+    <string name="text_description_none">N/A</string>
+    <string name="text_history_order">History Order</string>
+    <string name="text_store_manage">Storage Manage</string>
+    <string name="text_add_template">New Order Template</string>
+    <string name="text_cancel_order">Cancel Order</string>
+    <string name="text_customer_order_manage">Order Manage</string>
+    <string name="text_vegetable">Vegetiable</string>
+    <string name="text_fruit">Fruits</string>
+    <string name="text_template_prefix">Template :  </string>
+    <string name="text_delete_template">Delete Template</string>
+    <string name="text_login_user">Login Account : %1$s</string>
+    <string name="text_wait_for_receive">Pending : %1$s</string>
+    <string name="text_wait_for_ship">Wait for Deliver : %1$s</string>
+    <string name="text_cuntomer_list">Customer List</string>
+    <string name="text_wait_for_reveive_simple">Pending</string>
+    <string name="text_wait_for_ship_simple">Confirmed</string>
+    <string name="text_order_state_prefix">Order Status : %1$s</string>
+    <string name="text_confirm">Done</string>
+    <string name="text_preview">Preview</string>
+    <string name="text_prefix_operator">Operator :  %1$s</string>
+    <string name="text_prefix_supplier_storage_amount">Limit remain :  %1$s</string>
+    <string name="text_prefix_customer_storage_amount">Storage :  %1$s</string>
+    <string name="text_date_select_mode">Date : </string>
+    <string name="text_customer_select">Customer : </string>
+    <string name="text_select_all">Select all</string>
+    <string name="text_select_customer_hit">Select Customer</string>
+    <string name="text_select_customer_prefix">%1$s Customer Selected</string>
+    <string name="text_generate_report">Generage Report</string>
+    <string name="text_add">Add</string>
+    <string name="text_minus">Minus</string>
+    <string name="text_more_history_order">More</string>
+    <string name="text_loading">Loading..</string>
+    <string name="text_store_reset">Cancel Limit</string>
+    <string name="text_product_none">N/A</string>
+    <string name="hint_online_search">Online search</string>
+    <string name="hint_order_human_id">Search order ID</string>
+    <string name="text_login_exparted">Login expired</string>
+
+    <string name="login_customer_title"><b>Login</b></string>
+    <string name="title_store_activity">%1$s Storage</string>
+    <string name="title_order_overview_activity">Order Overview</string>
+    <string name="title_order_template_create">New Order Template</string>
+    <string name="title_order_template_edit">Edit Order Template</string>
+    <string name="title_history_order">History Order</string>
+    
+    <string name="description_customer_store">Customer Storage</string>
+    <string name="description_order_history">History Order</string>
+    <string name="description_order_records">Order Overview</string>
+    
+    <string name="hint_cancel_order">Why i want cancel this order</string>
+    
+    <string name="title_product_manage">%1$s Goods Total</string>
+
+	<string name="dialog_date_title">Selet Date Range</string>
+	<string name="dialog_loging_out_text">Loging out...</string>
+	<string name="dialog_server_data_already_change">Data has been changed</string>
+	<string name="dialog_change_data_positive_confirm">Continue change %1$s</string>
+	<string name="dialog_confirm_order_cancel_title">Cancel this order?</string>
+	<string name="dialog_auto_logout_title">Logout</string>
+	<string name="dialog_auto_logout_message">Your account has been login with another devices.</string>
+	<string name="dialog_template_deleted_title">Edit field</string>
+	<string name="dialog_template_deleted_message">Field, Template has been deleted</string>
+	<string name="dialog_customer_choice_title">Select Customer</string>
+	
+	<string name="dialog_delete_tempalte_title">Confirm</string>
+	<string name="dialog_delete_tempalte_message">Delete this template?</string>
+	
+	<string name="toast_not_found">Data not found</string>
+	<string name="toast_tart_time_not_selected">Please select target date</string>
+    <string name="toast_order_state_change_success">Success</string>
+    <string name="toast_order_cancel_success">Success</string>
+
+    <string name="toast_order_product_list_is_empty">Product list is empty</string>
+    <string name="toast_make_new_order_start">Submiting...</string>
+    <string name="toast_make_new_order_success">Success</string>
+    <string name="toast_make_new_order_failed">Failed</string>
+    <string name="toast_amend_order_start">Submiting...</string>
+    
+    <string name="toast_none_network_connection">None network connection, please check your network setting</string>
+    <string name="toast_tempalte_name_is_none">Tempalte name can\'t be empty</string>
+    
+    <string name="toast_common_change_success">Edit Success</string>
+    <string name="toast_common_change_failed">Edit Failed</string>
+    
+    <string name="toast_order_already_changed">Failed, Data already changed, please reconfirm</string>
+    <string name="toast_select_customer_is_none">Customer list is empty, please select customer</string>
+    
+    <string name="toast_statistic_order_is_empty">Not found</string>
+    <string name="toast_order_report_generate_success">Generate report success, please check the email</string>
+    
+    <string name="toast_no_more_hsitory_order">All history order has been loaded</string>
+    <string name="toast_statistic_is_empty">Order summery is empty</string>
+	
+	<string name="detail_activity_customer_title">Order Detail</string>
+    
+    <string name="detail_list_item_tart_time">Targer Date :</string>
+    <string name="detail_operate_list_item_supplier_prefix">Operator :</string>
+
+    <string name="detail_actionbar_edit_order_text">Edit</string>
+    <string name="detail_actionbar_copy_order_text">Copy</string>
+    <string name="detail_actionbar_cancel_order_text">Cancel</string>
+    <string name="detail_pager_order_detail_title">Detail</string>
+    <string name="detail_pager_operate_title">Record</string>
+
+    <string name="detail_text_customer_operate_title">Customer</string>
+    <string name="detail_text_suplier_operate_title">Supplier</string>
+    <string name="detail_text_customer_state_title">Order State</string>
+    <string name="detail_text_customer_product_title">Product List</string>
+    <string name="detail_text_create_time_prefix">Create :</string>
+    <string name="detail_text_target_time_prefix">Target :</string>
+   	<string name="detail_text_confirm_time_prefix">Confirm :</string>
+   	<string name="detail_text_deliver_time_prefix">Deliver :</string>
+    <string name="detail_text_receive_time_prefix">Receive :</string>
+    <string name="detail_text_cancel_time_prefix">Cancel :</string>
+    <string name="detail_text_state_prefix">State :</string>
+    <string name="detail_text_confirm_none">N/A</string>
+    <string name="detail_text_ship_none">N/A</string>
+    <string name="detail_text_deliver_none">N/A</string>
+    
+    <string name="order_operate_action_customer_new">Customer Create</string>
+    <string name="order_operate_action_supplier_new">Supplier Create</string>
+    <string name="order_operate_action_customer_amend">Customer Edit</string>
+    <string name="order_operate_action_supplier_amend">Supplier Edit</string>
+    <string name="order_operate_action_confirm">Supplier Confirm</string>
+    <string name="order_operate_action_ship">Supplier Deliver</string>
+    <string name="order_operate_action_dliver">Customer Receive</string>
+    <string name="order_operate_action_customer_cancel">Customer Cancel</string>
+    <string name="order_operate_action_supplier_cancel">Supplier Cancel</string>
+    <string name="order_operate_action_system_amend">System Edit</string>
+    
+    <string name="detail_supplier_btn_text_confirm">Confirm</string>
+    <string name="detail_supplier_btn_text_dliver">Deliver</string>
+
+    <string name="detail_text_add_prefix"><font fgcolor="#ff00ff00">Add</font> %1$s</string>
+    <string name="detail_text_delete_prefix"><font fgcolor="#ffff0000">Delete</font> %1$s</string>
+    <string name="detail_text_change_prefix"><font fgcolor="#ffffff00">Edit</font> %1$s</string>
+    
+    <string name="order_state_change_confirm_dialog_message">Change order state to  %1$s?</string>
+    
+    <string name="title_activity_login">Mobile Ordering System</string>
+
+    <!-- Strings related to login -->
+    <string name="login_username">User Name</string>
+    <string name="login_password">Password</string>
+    <string name="login_text_login"><b>Login</b></string>
+    <string name="login_error_invalid_password">Password is too short</string>
+    <string name="login_error_incorrect">User name or password is incorrect</string>
+    <string name="login_error_field_required">User name or password can not be empty</string>
+    
+    <string name="main_action_new_order">New Order</string>
+    <string name="main_activity_title_all">Order List</string>
+    <string name="main_drawer_open">Open Drawer</string>
+    <string name="main_drawer_close">Close Drawer</string>
+    <string name="main_drawer_btn_logout">Logout</string>
+    <string name="main_drawer_logout_dialog_title">Logout</string>
+    <string name="main_drawer_logout_dialog_message">Logout current account?</string>
+    <string name="main_drawer_cuntomer_title">Customer List</string>
+    <string name="main_drawer_order_template_title">Order Template</string>
+    <string name="main_drawer_order_template_list_header">New Order Template</string>
+    
+    <string name="editorder_step_one_date_select_title">Please select target date</string>
+    <string name="editorder_step_one_previous_btn">Back</string>
+    <string name="editorder_step_one_next_btn">Next</string>
+    <string name="editorder_step_one_fragment_title">Target Date Select</string>
+    <string name="editorder_step_two_fragment_title">Product Select</string>
+    <string name="editorder_step_three_fragment_title">Order Preview</string>
+	<string name="editorder_step_three_submit_button">Submit</string>
+	
+	<string name="editorder_step_two_btn_mode_order_text">Next</string>
+	<string name="editorder_step_two_btn_mode_template_text">Preview</string>
+	
+	<string name="dialog_preview_title">Template Preview</string>
+
+    <string name="dialog_edit_order_progress_title">Submiting</string>
+    <string name="dialog_edit_order_progress_message">Please wait...</string>
+
+    <string name="edit_target_text_hit">Click to select target date</string>
+    <string name="edit_title_time">Target Date : %1$s</string>
+    <string name="edit_fragment_title_select_product">Product Select</string>
+    <string name="edit_fragment_title_new_oder">New Order</string>
+    <string name="edit_fragment_title_edit_oder">Edit Order</string>
+    <string name="edit_detail_product_list_title">Order List</string>
+    <string name="edit_dialog_title_amount_select">Order Amount</string>
+    <string name="edit_dialog_edittext_decimal_hint">Enter(eg. 2.5)</string>
+    <string name="edit_dialog_edittext_single_hint">Enter(eg. 2)</string>
+    <string name="edit_dialog_amount_subfix_text">Kg</string>
+    <string name="edit_product_amount">%1$s Kg</string>
+    
+    <string name="send_dialog_title">Confirm</string>
+    <string name="send_dialog_message">Submit order?</string>
+</resources>

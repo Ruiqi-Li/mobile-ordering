@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.squareup.timessquare.CalendarPickerView
+        android:id="@+id/dialog_calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_height"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/padding_large"
+        android:paddingLeft="@dimen/padding_normal"
+        android:paddingRight="@dimen/padding_normal"
+        android:scrollbarStyle="outsideOverlay" />
+
+</LinearLayout>

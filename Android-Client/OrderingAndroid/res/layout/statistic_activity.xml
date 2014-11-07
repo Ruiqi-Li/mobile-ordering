@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/statistic_activity_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/statistic_main_pannel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_normal"
+                android:paddingRight="@dimen/padding_normal" >
+
+                <TextView
+                    android:gravity="center_vertical|right"
+                    android:layout_width="@dimen/main_prefix_text_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_customer_select"
+                    android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+
+                <TextView
+                    android:id="@+id/statistic_customer_spinner"
+                    style="?android:attr/spinnerStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_normal"
+                    android:layout_marginRight="@dimen/padding_normal"
+                    android:paddingBottom="@dimen/padding_normal"
+                    android:paddingTop="@dimen/padding_small"
+                    android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_normal"
+                android:paddingRight="@dimen/padding_normal" >
+
+                <TextView
+                    android:gravity="center_vertical|right"
+                    android:layout_width="@dimen/main_prefix_text_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_date_select_mode"
+                    android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+
+                <Spinner
+                    android:id="@+id/statistic_mode_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_normal"
+                    android:layout_marginRight="@dimen/padding_normal"
+                    android:paddingBottom="@dimen/padding_normal"
+                    android:paddingTop="@dimen/padding_small"
+                    android:textAppearance="@style/Smartmediasoft.Text.Medium" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/smartmediasoft_color" />
+
+            <com.squareup.timessquare.CalendarPickerView
+                android:id="@+id/overview_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/padding_normal"
+                android:layout_marginRight="@dimen/padding_normal"
+                android:layout_weight="1"
+                android:clipToPadding="false"
+                android:scrollbarStyle="outsideOverlay" />
+
+            <Button
+                android:id="@+id/overview_select_confirm_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/padding_large"
+                android:layout_marginRight="@dimen/padding_large"
+                android:text="@string/text_confirm"
+                android:textAppearance="@style/Smartmediasoft.Text.Medium"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/activity_swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/statistic_slide_pannel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</android.support.v4.widget.SlidingPaneLayout>
